@@ -1,1 +1,1 @@
-# freenezinpages
+# freenezinpages.github.io
