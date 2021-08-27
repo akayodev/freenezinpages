@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 mongoose
-  .connect('mongodb+srv://okda:okda@cluster0.mii9f.mongodb.net/nezindb?retryWrites=true&w=majority', {
+  .connect('db', {
     useNewUrlParser: true,
   })
   .then(() => console.log('MongoDb connected'))
