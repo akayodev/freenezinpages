@@ -25,12 +25,12 @@ const UsersSchema = new mongoose.Schema({
 const Users = mongoose.model('Users', UsersSchema);
 
 app.get('/', (req, res) => {
-  // Users.create({
-  //   name: 'Denis',
-  //   email: 'test@test.com',
-  // })
-  //   .then(user => res.send(user))
-  //   .catch(err => res.send(err));
+   Users.create({
+     name: 'Denis',
+     email: 'test@test.com',
+   })
+     .then(user => res.send(user))
+     .catch(err => res.send(err));
   Users.find()
     .then(users => res.send(users))
     .catch(err => res.send(err));
